@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart School</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #172554;
+}
+header {
+  background: #123b70;
+  color: white;
+  padding: 28px 18px;
+  text-align: center;
+}
+header h1 { margin: 0 0 8px; }
+header p { margin: 0; }
+nav {
+  background: white;
+  padding: 13px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  position: sticky;
+  top: 0;
+}
+nav a {
+  color: #123b70;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+main {
+  max-width: 850px;
+  margin: auto;
+  padding: 18px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #00000010;
+}
+.card h2 { color: #1763a5; }
+.item {
+  padding: 12px;
+  margin: 8px 0;
+  background: #eff6ff;
+  border-radius: 8px;
+}
+button {
+  background: #1763a5;
+  color: white;
+  border: 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+footer {
+  background: #123b70;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 25px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏫 Smart School</h1>
+  <p>Learning Today, Leading Tomorrow</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#materials">Study</a>
+  <a href="#routine">Routine</a>
+  <a href="#notice">Notice</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section class="card" id="home">
+    <h2>স্বাগতম!</h2>
+    <p>Smart School শিক্ষার্থীদের জন্য একটি
+    ডিজিটাল শিক্ষা প্ল্যাটফর্ম।</p>
+    <button onclick="welcome()">Get Started</button>
+  </section>
+
+  <section class="card" id="materials">
+    <h2>📚 Study Materials</h2>
+    <div class="item">বাংলা — Class 8</div>
+    <div class="item">English — Class 8</div>
+    <div class="item">Mathematics — Class 8</div>
+    <div class="item">Science — Class 8</div>
+  </section>
+
+  <section class="card" id="routine">
+    <h2>📅 Class Routine</h2>
+    <div class="item">Saturday — Mathematics</div>
+    <div class="item">Sunday — English</div>
+    <div class="item">Monday — Science</div>
+    <div class="item">Tuesday — Bengali</div>
+  </section>
+
+  <section class="card" id="notice">
+    <h2>📢 Notice Board</h2>
+    <div class="item">নতুন শিক্ষাবর্ষের প্রস্তুতি চলছে।</div>
+    <div class="item">নিয়মিত ক্লাসে উপস্থিত থাকুন।</div>
+  </section>
+
+  <section class="card" id="contact">
+    <h2>📞 Contact</h2>
+    <p>Email: school@example.com</p>
+    <p>Address: Bangladesh</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Smart School</p>
+  <p>Built with AI & Mobile Learning</p>
+</footer>
+
+<script>
+function welcome() {
+  alert("Welcome to Smart School!");
+}
+</script>
+
+</body>
+</html>
